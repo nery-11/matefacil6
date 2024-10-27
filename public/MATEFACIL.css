@@ -1,0 +1,559 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal más ajustado */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    padding: 10px 20px; /* Reducido para ajustarlo más */
+    max-width: 350px; /* Reducido para que sea más compacto */
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de los módulos en vertical */
+.botones-modulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botones-modulos a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px; /* Ajuste de padding para que los botones sean más pequeños */
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em; /* Ligera reducción del tamaño de fuente */
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative; /* Para los adornos de números */
+    width: auto;
+}
+
+.botones-modulos a:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+/* Adornos con números coloridos */
+.botones-modulos a::before {
+    content: attr(data-numero); /* Tomar el número desde el atributo data-numero */
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(255, 165, 0, 0.5); /* Naranja claro translúcido */
+    transform: rotate(-10deg);
+    z-index: -1; /* Para que quede debajo del texto del botón */
+}
+
+/* Colores para los botones */
+.btn-juegos {
+    background-color: #32CD32; /* Verde brillante */
+}
+
+.btn-pruebas {
+    background-color: #FFA500; /* Naranja */
+}
+
+.btn-recompensas {
+    background-color: #FF6347; /* Rojo tomate */
+}
+
+.btn-retroalimentacion {
+    background-color: #1E90FF; /* Azul */
+}
+
+.btn-juegos:hover {
+    background-color: #228B22; /* Verde más oscuro */
+}
+
+.btn-pruebas:hover {
+    background-color: #FF8C00; /* Naranja más oscuro */
+}
+
+.btn-recompensas:hover {
+    background-color: #FF4500; /* Rojo más oscuro */
+}
+
+.btn-retroalimentacion:hover {
+    background-color: #4169E1; /* Azul más oscuro */
+}
+
+/* Título con números en lugar de letras */
+.titulo-numero {
+    color: #FF1493;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.titulo-numero span {
+    font-size: 1.2em;
+}
+
+/* Colores diferentes para los números en el título */
+.numero-1 {
+    color: #FFA500; /* Naranja */
+}
+
+.numero-4 {
+    color: #32CD32; /* Verde brillante */
+}
+
+.numero-0 {
+    color: #1E90FF; /* Azul */
+}
+
+.numero-3 {
+    color: #FF6347; /* Rojo tomate */
+}
+
+/* Botón de volver */
+.btn-volver {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-volver:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn-juego {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .numero-adjunto {
+        margin-left: -30px;
+    }
+}
+
+/* Estilos generales para el menú de juegos */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal ajustado */
+.menu-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del menú */
+h1 {
+    color: #FF1493; /* Rosa llamativo */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Botones en el menú */
+.menu-juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 10px;
+}
+
+.menu-juegos a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Diferentes colores para cada botón */
+.btn-conocimiento {
+    background-color: #32CD32; /* Verde brillante */
+}
+
+.btn-sumas {
+    background-color: #FFA500; /* Naranja */
+}
+
+.btn-multiplicacion {
+    background-color: #FF6347; /* Rojo tomate */
+}
+
+.btn-volver {
+    background-color: #1E90FF; /* Azul */
+}
+
+/* Efectos al pasar el mouse sobre los botones */
+.menu-juegos a:hover {
+    transform: scale(1.05);
+}
+
+/* Colores más oscuros al pasar el mouse */
+.btn-conocimiento:hover {
+    background-color: #228B22; /* Verde oscuro */
+}
+
+.btn-sumas:hover {
+    background-color: #FF8C00; /* Naranja oscuro */
+}
+
+.btn-multiplicacion:hover {
+    background-color: #FF4500; /* Rojo oscuro */
+}
+
+.btn-volver:hover {
+    background-color: #4169E1; /* Azul oscuro */
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu-container {
+        max-width: 90%; /* Menú más estrecho en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .menu-juegos a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+/* Estilos para la estructura general */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff69b4;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones de los juegos */
+.btn-juego {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff; /* Color azul para los botones */
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-juego:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+    transform: translateY(-5px); /* Efecto levantamiento */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de 'Volver al Menú de Juegos' */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btn-volver:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+
+
+
+/* Estilo para la estructura general */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff69b4; /* Color del título */
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones de los juegos con los mismos colores y formas que el menú principal */
+.btn-juego {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff69b4; /* Color de fondo igual al del título */
+    border-radius: 12px; /* Bordes redondeados */
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3); /* Sombra en el botón */
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-juego:hover {
+    background-color: #d2569d; /* Color más oscuro en hover */
+    transform: translateY(-5px); /* Efecto de levantarse al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+}
+
+/* Botón de 'Volver al Menú de Juegos' con mismo estilo */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ffc107; /* Color similar al menú principal */
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3); /* Sombra en el botón */
+}
+
+.btn-volver:hover {
+    background-color: #e0a800; /* Color más oscuro en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.5);
+}
+
+
+
+
+
+/* Contenedor del menú */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Título del menú */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff69b4; /* Puedes cambiar este color si deseas */
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Estilos de los botones del menú */
+.botones-juegos a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos de los diferentes botones con colores brillantes */
+.botones-juegos a:nth-child(1) {
+    background-color: #28a745; /* Verde */
+}
+
+.botones-juegos a:nth-child(2) {
+    background-color: #ffc107; /* Amarillo */
+}
+
+.botones-juegos a:nth-child(3) {
+    background-color: #fd7e14; /* Naranja */
+}
+
+.botones-juegos a:nth-child(4) {
+    background-color: #007bff; /* Azul */
+}
+
+/* Efecto hover en los botones */
+.botones-juegos a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón para regresar al menú de Juegos */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ffc107; /* Amarillo */
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-volver:hover {
+    background-color: #e0a800; /* Más oscuro en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.5);
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px 20px;
+    max-width: 350px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.titulo-numero {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.numero-1 {
+    color: #FF0000;
+}
+
+.numero-3 {
+    color: #FF7F00;
+}
+
+.numero-0 {
+    color: #1E90FF;
+}
+
+.numero-4 {
+    color: #00FF00;
+}
+
+/* Botones del menú */
+.botones-modulos {
+    text-align: center;
+}
+
+.botones-modulos a {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Colores para cada botón */
+.btn-juegos {
+    background-color: #32CD32; /* Verde brillante */
+}
+
+.btn-pruebas {
+    background-color: #FFA500; /* Naranja */
+}
+
+.btn-recompensas {
+    background-color: #FF6347; /* Rojo tomate */
+}
+
+.btn-retroalimentacion {
+    background-color: #1E90FF; /* Azul */
+}
+
+/* Efecto hover para los botones */
+.botones-modulos a:hover {
+    transform: translateY(-5px);
+    background-color: #d1d1d1;
+}
+

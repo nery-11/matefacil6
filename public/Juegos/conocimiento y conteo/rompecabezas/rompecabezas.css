@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Fondo de números */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px; /* Aseguramos que tenga un tamaño fijo */
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    color: #ff69b4;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del rompecabezas organizado en 3x3 */
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas de igual tamaño */
+    grid-gap: 5px; /* Espacio uniforme entre filas y columnas */
+    width: 200px; /* Tamaño fijo para que las filas y columnas estén uniformes */
+    height: 200px;
+}
+
+/* Estilo para las piezas del rompecabezas */
+.puzzle-piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: grab;
+    transition: transform 0.2s ease;
+    background-color: #32CD32; /* Color para las piezas */
+    width: 100%; /* Asegura que las piezas ocupen toda la celda */
+    height: 100%;
+}
+
+/* Efecto al arrastrar */
+.puzzle-piece:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+/* Área de puntuación */
+#puntuacion {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Botón de reiniciar */
+.btn-volver {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #FFA500; /* Naranja */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3); /* Sombra suave */
+}
+
+.btn-volver:hover {
+    background-color: #FF8C00; /* Naranja más oscuro en hover */
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.5); /* Sombra más marcada */
+}
+
+/* Botón de regresar */
+.boton-regresar {
+    margin-top: 20px;
+}
+
+.boton-regresar .btn-volver {
+    background-color: #1E90FF; /* Azul */
+}
+
+.boton-regresar .btn-volver:hover {
+    background-color: #1c86ee; /* Azul más oscuro en hover */
+}

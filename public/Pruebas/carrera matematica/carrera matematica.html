@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera Matemática</title>
+    <link rel="stylesheet" href="carrera matematica.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Carrera Matemática 🚗💨</h1>
+        <p id="instrucciones">Resuelve las operaciones y lleva al Lamborghini a la meta.</p>
+
+        <div id="cronometro">Tiempo: 30s</div>
+
+        <div id="personaje">
+            <!-- Personaje (Lamborghini) que avanza con respuestas correctas -->
+            <img id="imgPersonaje" src="https://illustrationagent.com/wp-content/uploads/2019/07/3D-Lambogini-Aventador-Illustration-1170x785.jpg" alt="Lamborghini Aventador" width="150">
+        </div>
+
+        <div id="pregunta">
+            <!-- Aquí se mostrarán las preguntas -->
+        </div>
+
+        <div id="opciones">
+            <!-- Aquí se generarán las opciones de respuesta -->
+        </div>
+
+        <div id="feedback"></div>
+
+        <button id="comenzar" onclick="iniciarJuego()">¡Comenzar Evaluación!</button>
+
+        <p id="resultado"></p>
+
+        <!-- Botón para regresar al menú de Pruebas -->
+        <a href="../pruebas.html" class="btn-volver">Volver al Menú de Pruebas</a>
+    </div>
+
+    <script src="carrera matematica.js"></script>
+
+</body>
+</html>

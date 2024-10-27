@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Rompecabezas</title>
+    <link rel="stylesheet" href="rompecabezas.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Sección de Juego de Rompecabezas -->
+        <div id="seccionJuego" class="seccion">
+            <h1 id="tituloJuego">🎈 Juego de Rompecabezas</h1>
+            <div id="contenidoJuego">
+                <!-- El rompecabezas se generará aquí -->
+            </div>
+            <!-- Área de Retroalimentación -->
+            <p id="puntuacion">Correctas: 0 | Incorrectas: 0</p>
+            <button onclick="reiniciarJuego()" class="btn btn-volver mt-3">🔄 Reiniciar Juego</button>
+        </div>
+
+        <!-- Botón para regresar al menú de Conocimiento y Conteo -->
+        <div class="boton-regresar">
+            <a href="../conocimiento_y_conteo.html" class="btn-volver">Regresar al Menú de Conocimiento y Conteo</a>
+        </div>
+    </div>
+
+    <!-- Enlace al JavaScript -->
+    <script src="rompecabezas.js"></script>
+</body>
+</html>

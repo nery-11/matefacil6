@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de los peces */
+#game-container {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente negro detrás de los peces */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Área de juego */
+#game-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Organizar el juego en una cuadrícula */
+    gap: 5px; /* Espacio más pequeño entre los cuadros */
+    width: 300px; /* Reducido el área de juego */
+    margin: 0 auto;
+}
+
+/* Cuadros del juego */
+.cuadro {
+    width: 120px;
+    height: 120px;
+    background-color: #87cefa;
+    border: 3px solid #004d40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00f; /* Azul brillante */
+    background-image: url('https://thumbs.dreamstime.com/z/vector-de-clipart-pez-payaso-dibujos-animados-cartograf%C3%ADa-payasos-portador-aislado-en-fondo-blanco-273981119.jpg?w=768');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    animation: nado 4s ease-in-out infinite; /* Animación añadida */
+}
+
+/* Animación de los peces para simular un movimiento de nado */
+@keyframes nado {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Movimiento reducido */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Botones generales (Reiniciar y Volver) */
+button, .btn-volver {
+    padding: 10px 20px;
+    background-color: #32CD32; /* Verde brillante */
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover, .btn-volver:hover {
+    background-color: #228B22; /* Verde más oscuro */
+}
+
+/* Botón de volver */
+.btn-volver {
+    background-color: #1E90FF; /* Azul */
+}
+
+.btn-volver:hover {
+    background-color: #4169E1; /* Azul más oscuro */
+}
+
+/* Puntuación y mensajes */
+#pez-counter, #errores-counter, #mensaje {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #ff4500;
+}

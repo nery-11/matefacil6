@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal más angosto */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px; /* Más angosto */
+    margin: auto;
+}
+
+/* Título con iconos de aprendizaje */
+.titulo-numero {
+    font-size: 2em; /* Título más pequeño para ajustarse al nuevo ancho */
+    color: #ff69b4;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.icono-fun {
+    animation: spin 2s infinite linear;
+}
+
+/* Animación de rotación */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación de entrada */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botones del menú */
+.btn-parejas {
+    background-color: #32CD32;
+    display: block;
+    padding: 10px; /* Botones más pequeños */
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1em; /* Tamaño de fuente ajustado */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.btn-rompecabezas {
+    background-color: #FFA500;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+/* Efectos hover para los botones */
+.btn-parejas:hover {
+    background-color: #228B22;
+    transform: scale(1.05);
+}
+
+.btn-rompecabezas:hover {
+    background-color: #FF8C00;
+    transform: scale(1.05);
+}
+
+/* Botón de regresar */
+.btn-volver {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.btn-volver:hover {
+    background-color: #4169E1;
+    transform: scale(1.05);
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

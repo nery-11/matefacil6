@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Fondo similar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Más angosto */
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+
+/* Botones del menú */
+.botones-modulos a {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra en los botones */
+}
+
+/* Estilo de botones con colores */
+.btn-juegos {
+    background-color: #32CD32; /* Verde brillante */
+}
+
+.btn-pruebas {
+    background-color: #FFA500; /* Naranja */
+}
+
+/* Botón azul de volver */
+.btn-volver {
+    background-color: #1E90FF; /* Azul brillante */
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra en el botón */
+}
+
+/* Hover en los botones */
+.botones-modulos a:hover, .btn-volver:hover {
+    background-color: #d1d1d1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte en hover */
+}

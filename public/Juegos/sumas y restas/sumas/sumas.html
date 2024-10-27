@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera de Cálculo - Sumas</title>
+    <link rel="stylesheet" href="sumas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏁 Carrera de Cálculo - Sumas</h1>
+        
+        <!-- Cronómetro -->
+        <div id="cronometro">Tiempo: <span id="tiempoRestante">45</span> segundos</div>
+        
+        <!-- Área de la carrera -->
+        <div id="track" class="track">
+            <div id="player" class="player"></div> <!-- Nuevo personaje -->
+        </div>
+
+        <!-- Contadores de acertados y fallados -->
+        <div id="contadores">
+            <p>Acertados: <span id="acertados">0</span></p>
+            <p>Fallados: <span id="fallados">0</span></p>
+        </div>
+
+        <!-- Área de preguntas -->
+        <div id="preguntas" class="preguntas">
+            <p id="operacion">¿Cuánto es 5 + 3?</p>
+            <div id="opciones">
+                <!-- Aquí se generarán las opciones de respuesta -->
+            </div>
+        </div>
+
+        <!-- Área de retroalimentación -->
+        <p id="mensaje"></p>
+
+        <!-- Botón para jugar de nuevo -->
+        <button id="btn-jugar-nuevo" class="btn-jugar-nuevo" style="display: none;" onclick="reiniciarJuego()">Jugar de nuevo</button>
+
+        <!-- Botón de regresar al menú de Sumas y Restas -->
+        <a href="../sumas_y_restas.html" class="btn-volver">Regresar al Menú de Sumas y Restas</a>
+
+    </div>
+
+    <!-- Enlace al JavaScript -->
+    <script src="sumas.js"></script>
+</body>
+</html>

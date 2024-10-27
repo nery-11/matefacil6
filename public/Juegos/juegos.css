@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título con iconos de juegos */
+.titulo-numero {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los iconos y el texto */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.icono-fun {
+    animation: spin 2s infinite linear; /* Rotación de la figura 🎯 */
+}
+
+/* Animación de rotación */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos y animaciones únicos para cada botón */
+.btn-conocimiento {
+    background-color: #32CD32; /* Verde brillante */
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.btn-sumas-restas {
+    background-color: #FFA500; /* Naranja */
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.btn-multiplicacion-divicion {
+    background-color: #FF6347; /* Rojo tomate */
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Efectos hover para los botones */
+.btn-conocimiento:hover {
+    background-color: #228B22; /* Verde oscuro */
+    transform: scale(1.05);
+}
+
+.btn-sumas-restas:hover {
+    background-color: #FF8C00; /* Naranja oscuro */
+    transform: scale(1.05);
+}
+
+.btn-multiplicacion-divicion:hover {
+    background-color: #FF4500; /* Rojo oscuro */
+    transform: scale(1.05);
+}
+
+/* Botón de regresar */
+.btn-volver {
+    display: block;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1E90FF; /* Azul */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.btn-volver:hover {
+    background-color: #4169E1; /* Azul más oscuro */
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

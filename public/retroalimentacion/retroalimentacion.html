@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retroalimentación</title>
+    <link rel="stylesheet" href="retroalimentacion.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💬 Retroalimentación</h1>
+
+        <!-- Frase motivacional aleatoria -->
+        <div class="frase-motivacional">
+            <p id="fraseMotivacional">"¡Cada paso te acerca a ser más genial!"</p>
+        </div>
+
+        <!-- Consejos basados en el rendimiento -->
+        <div class="consejos">
+            <h2>Consejos para mejorar:</h2>
+            <ul>
+                <li>Practica tus sumas antes de pasar a restas más difíciles.</li>
+                <li>Intenta tomarte tu tiempo en los juegos de memoria.</li>
+            </ul>
+        </div>
+
+        <!-- Botones para Historias, Chistes y Cantos -->
+        <div class="botones-extras">
+            <button onclick="mostrarHistorias()">📖 Historias de Números</button>
+            <button onclick="mostrarChistes()">😂 Chistes de Números</button>
+            <button onclick="mostrarCantos()">🎶 Cantos con Números</button>
+        </div>
+
+        <!-- Sección para mostrar el contenido de los botones -->
+        <div id="contenidoExtra"></div>
+
+        <!-- Resumen del progreso -->
+        <div class="progreso">
+            <h2>Tu Progreso:</h2>
+            <p>Has ganado <strong id="medallasGanadas">3 medallas de oro</strong> y completado <strong id="juegosCompletados">10 juegos</strong>.</p>
+            <p>Áreas de mejora: <strong>Multiplicación</strong>.</p>
+        </div>
+
+        <!-- Botón para volver al menú principal -->
+        <button id="volver-menu-principal" onclick="location.href='../MATEFACIL.html'">🔙 Volver al Menú Principal</button>
+
+    </div>
+
+    <script src="retroalimentacion.js"></script>
+</body>
+</html>
+

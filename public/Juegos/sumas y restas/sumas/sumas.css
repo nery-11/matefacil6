@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Mismo fondo de pantalla */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px; /* Ajuste para hacerlo más angosto */
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    color: #ff69b4;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Cronómetro */
+#cronometro {
+    font-size: 1.5em;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+/* Área de la carrera */
+#track {
+    width: 80%;  
+    height: 100px; /* Hacemos el área de la carrera un poco más angosta también */
+    background-color: #e0e0e0;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Personaje */
+.player {
+    width: 125px; /* Ajustamos el tamaño del personaje */
+    height: 75px; 
+    background-image: url('https://illustrationagent.com/wp-content/uploads/2019/07/3D-Lambogini-Aventador-Illustration-1170x785.jpg'); 
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Contadores de aciertos y fallos */
+#contadores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Área de preguntas */
+.preguntas {
+    margin-top: 20px;
+}
+
+/* Opciones de respuesta */
+#opciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.opcion {
+    padding: 10px 15px; /* Más pequeño para ajustarse al nuevo ancho */
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcion:hover {
+    background-color: #45A049;
+}
+
+/* Retroalimentación */
+#mensaje {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+
+/* Botón para regresar */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #FFA500; /* Naranja */
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3); 
+}
+
+.btn-volver:hover {
+    background-color: #e69500; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.5); 
+}

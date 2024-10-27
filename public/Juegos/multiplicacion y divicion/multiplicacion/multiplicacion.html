@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapa OVNIs - Multiplicación</title>
+    <link rel="stylesheet" href="multiplicacion.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛸 Atrapa OVNIs - Multiplicación</h1>
+
+        <!-- Cronómetro y contador -->
+        <div id="status-bar">
+            <p>Tiempo restante: <span id="cronometro">45</span> segundos</p>
+            <p>OVNIs atrapados: <span id="ovni-counter">0</span></p>
+        </div>
+
+        <!-- Área de juego -->
+        <div id="game-area" class="game-area">
+            <!-- Aquí aparecerán los OVNIs con multiplicaciones -->
+        </div>
+
+        <!-- Opciones de respuesta -->
+        <div id="opciones" class="opciones">
+            <!-- Aquí se generarán las opciones de respuesta -->
+        </div>
+
+        <!-- Botón de reiniciar -->
+        <button id="reiniciar-btn" onclick="reiniciarJuego()">Reiniciar Juego</button>
+
+        <!-- Botón de regresar al menú de Multiplicación y Divición -->
+        <a href="../multiplicacion_y_divicion.html" class="btn-volver">Volver al Menú de Multiplicación y Divición</a>
+
+        <!-- Mensaje de victoria/derrota -->
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- Enlace al JavaScript -->
+    <script src="multiplicacion.js"></script>
+</body>
+</html>

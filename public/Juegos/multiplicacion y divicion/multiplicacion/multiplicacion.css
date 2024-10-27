@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px; /* Se ha hecho más angosto */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+h1 {
+    color: #42A5F5; /* Azul brillante */
+    font-size: 2.5em;
+}
+
+#status-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.game-area {
+    width: 100%;
+    height: 300px; /* Se ha reducido la altura */
+    background-color: #F5F5F5;
+    position: relative;
+    border: 2px solid #42A5F5;
+    margin-bottom: 20px;
+}
+
+.ovni {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-image: url('https://img.freepik.com/vector-premium/ovni-nave-espacial-extraterrestre-dibujos-animados-nave-cosmica-forma-platillo_184733-79.jpg?w=740'); /* Imagen de OVNI */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Números en negro */
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: top 1.5s linear;
+}
+
+/* Opciones de respuesta */
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajustado a 4 columnas */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.opcion {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #42A5F5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcion:hover {
+    background-color: #1E88E5;
+}
+
+/* Botón de reiniciar */
+#reiniciar-btn {
+    background-color: #42A5F5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#reiniciar-btn:hover {
+    background-color: #1E88E5;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #FF5722; /* Naranja */
+}
+
+/* Botón de regresar */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #1E90FF; /* Azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3); /* Sombra suave */
+}
+
+.btn-volver:hover {
+    background-color: #1c86ee; /* Azul más oscuro en hover */
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(30, 144, 255, 0.5); /* Sombra más marcada en hover */
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #00bfff;
+    border-radius: 15px;
+    background-color: #ffebcd;
+    animation: bounceIn 1s ease-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.triangulo-medallas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medalla {
+    text-align: center;
+    margin: 15px;
+    animation: swing 1.5s infinite;
+}
+
+.medalla-oro {
+    order: 1; /* Posiciona la medalla de oro arriba */
+}
+
+.medallas-abajo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    order: 2; /* Posiciona las medallas de plata y bronce abajo */
+}
+
+.icono-corona-grande {
+    width: 75px; /* Tamaño mayor para la corona */
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+.icono-medalla {
+    width: 100px;
+    height: 100px;
+}
+
+.medalla p {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #228b22;
+    transform: scale(1.1);
+}
+
+/* Animación para hacer que las medallas oscilen */
+@keyframes swing {
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Botón azul para volver */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #1E90FF; /* Azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3); /* Sombra suave */
+}
+
+.btn-volver:hover {
+    background-color: #1c86ee; /* Azul más oscuro en hover */
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(30, 144, 255, 0.5); /* Sombra más marcada */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Temporizada</title>
+    <link rel="stylesheet" href="evaluacion temporizada.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Responde lo más rápido posible!</h1>
+        <p id="instrucciones">Selecciona la respuesta correcta antes de que se acabe el tiempo.</p>
+
+        <div id="cronometro">Tiempo: 30s</div>
+
+        <div id="pregunta">
+            <!-- Aquí se mostrarán las preguntas -->
+        </div>
+
+        <div id="opciones">
+            <!-- Aquí se generarán las opciones de respuesta -->
+        </div>
+
+        <div id="feedback"></div>
+
+        <button id="comenzar" onclick="iniciarEvaluacion()">¡Comenzar Evaluación!</button>
+
+        <p id="resultado"></p>
+
+        <!-- Botón para regresar al menú de Pruebas -->
+        <a href="../pruebas.html" class="btn-volver">Volver al Menú de Pruebas</a>
+    </div>
+
+    <script src="evaluacion temporizada.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Parejas</title>
+    <link rel="stylesheet" href="juego_de_parejas.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="seccionJuego" class="seccion">
+            <h1>🃏 Juego de Parejas</h1>
+            <div id="contenidoJuego" class="memory-game">
+                <!-- El juego de parejas se generará aquí -->
+            </div>
+            <!-- Área de Retroalimentación -->
+            <p id="puntuacion">Parejas encontradas: 0</p>
+            <p id="intentosFallidos">Intentos fallidos: 0</p>
+            <p id="juegosGanados">Juegos ganados: 0</p>
+            <button onclick="reiniciarJuego()" class="btn btn-volver mt-3">🔄 Reiniciar Juego</button>
+        </div>
+        
+        <!-- Botón para regresar al Menú de Conocimiento y Conteo -->
+        <div class="boton-regresar">
+            <a href="../conocimiento_y_conteo.html" class="btn-volver">Volver al Menú de Conocimiento y Conteo</a>
+        </div>
+    </div>
+
+    <!-- Enlace al JavaScript -->
+    <script src="juego_de_parejas.js"></script>
+</body>
+</html>

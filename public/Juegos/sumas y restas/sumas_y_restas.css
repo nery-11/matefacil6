@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://www.roars.it/wp-content/uploads/2016/10/numbers.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.titulo {
+    font-size: 28px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Decoración de título */
+.titulo::before {
+    content: '➕ ';
+    font-size: 30px;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.titulo::after {
+    content: '➖ ';
+    font-size: 30px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+}
+
+/* Botones de los módulos */
+.botones-modulos {
+    text-align: center;
+}
+
+.botones-modulos a {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Botón de Sumas */
+.btn-sumas {
+    background-color: #32CD32; /* Verde */
+}
+
+/* Botón de Restas */
+.btn-restas {
+    background-color: #FFA500; /* Naranja */
+}
+
+/* Efecto hover */
+.botones-modulos a:hover {
+    background-color: #d1d1d1;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de volver */
+.btn-volver {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1E90FF; /* Azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    background-color: #1c86ee; /* Azul más oscuro en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 144, 255, 0.5);
+}
+
+/* Sombra más fuerte en hover */
+.btn-volver:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
